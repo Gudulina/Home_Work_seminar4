@@ -3,13 +3,13 @@
 int Summa(int number)
 {
     int count = 0;
-
+    Console.Write($"Сумма цифр числа {number} = ");
     while (number > 0)
     {
         count += number % 10;
         number /= 10;
     }
-    return count;
+    return count;    
 }
 
 Console.WriteLine(Summa(78));
